@@ -60,7 +60,6 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         script: |
-          # Выполняет pull образа с DockerHub
           sudo docker pull elinaav/d21d58da2b44
           #остановка всех контейнеров
           sudo docker stop $(sudo docker ps -a -q)
